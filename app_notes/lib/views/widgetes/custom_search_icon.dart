@@ -14,7 +14,7 @@ class Customsearchicon extends StatelessWidget {
       child:const Center(
         child:Icon(Icons.search,
         size: 28,
-        ),
+        ), 
         ),
     );
   }
