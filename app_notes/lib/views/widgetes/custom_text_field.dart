@@ -9,6 +9,10 @@ class Customtextfield extends StatelessWidget {
     return TextField(
       cursorColor: kprimarycolor,
       decoration: InputDecoration(
+        hintText: 'titel',
+        hintStyle:const TextStyle(
+          color: kprimarycolor,
+        ),
         border: BuildBorder(),
         enabledBorder: BuildBorder(),
         focusedBorder: BuildBorder(kprimarycolor),
