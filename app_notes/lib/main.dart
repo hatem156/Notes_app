@@ -9,7 +9,7 @@ void main() async {
   await Hive.initFlutter();
   await Hive.openBox(knotesbox);
   runApp(const Notesapp());
-}
+} 
 
 class Notesapp extends StatelessWidget {
   const Notesapp({super.key});
