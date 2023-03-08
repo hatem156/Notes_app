@@ -1,8 +1,5 @@
 
 import 'package:flutter/material.dart';
-import 'package:flutter/src/widgets/framework.dart';
-import 'package:flutter/src/widgets/placeholder.dart';
-
 import 'widgetes/notes_view_body.dart';
 
 class Notesview extends StatelessWidget {
@@ -10,8 +7,9 @@ class Notesview extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const Scaffold(
-      body: Notesviewbody(),
+    return  Scaffold(
+      floatingActionButton: FloatingActionButton(onPressed:() {},child: Icon(Icons.add),),
+      body:const Notesviewbody(),
       );
   }
 }
