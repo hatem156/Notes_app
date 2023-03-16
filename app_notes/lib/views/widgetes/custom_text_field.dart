@@ -1,3 +1,5 @@
+
+
 import 'package:app_notes/views/widgetes/constant.dart';
 import 'package:flutter/material.dart';
 
@@ -26,17 +28,18 @@ final void Function(String?)? onsaved;
         hintStyle:const TextStyle(
           color: kprimarycolor,
         ),
-        border: BuildBorder(),
-        enabledBorder: BuildBorder(),
-        focusedBorder: BuildBorder(kprimarycolor),
+        border: buildBorder(),
+        enabledBorder: buildBorder(),
+        focusedBorder: buildBorder(kprimarycolor),
       ),
     );
   }
 
-  OutlineInputBorder BuildBorder([Color]) {
+
+  OutlineInputBorder buildBorder([color]) {
     return OutlineInputBorder(
         borderRadius: BorderRadius.circular(16),
-        borderSide: BorderSide(color:Color ?? Colors.white),
+        borderSide: BorderSide(color:color ?? Colors.white),
       );
   }
 }
